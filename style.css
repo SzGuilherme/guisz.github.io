@@ -52,6 +52,14 @@ header .header-esquerdo nav ul li a:hover{
     padding: 10px 0px;
 }
 
+header .header-esquerdo nav ul li a.active {
+    color: #D0D0D0;
+    font-weight: 600;
+
+    border-bottom: solid 2px #D0D0D0;
+    padding: 10px 0px;
+}
+
 /* HEADER DIREITO*/
 header .header-direito nav ul {
     display: flex;
@@ -172,6 +180,37 @@ main {
     background-color: #D0D0D020;
 
 }
+/* SECTION SOBRE MIM */
+.section-Project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.section-Project .projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.section-Project .projetos i {
+    font-size: 70px;
+    color: #a8a8a8;
+}
+
+
+.section-Project .projetos p {
+    font-size: 15px;
+    width: 70%;
+    text-align: center;
+    color: #a8a8a8;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
 
 /* Footer */
 footer {
