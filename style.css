@@ -108,6 +108,8 @@ main {
 .section-about .about {
     color: #D0D0D0;
     font-weight: 300;
+
+    animation: entrada 2s ease-out;
 }
 
 .section-about .about h1 {
@@ -338,4 +340,5 @@ footer .footer-contato i:hover {
         padding: 100px 0px 100px ;
     }
 }
+
 
