@@ -150,9 +150,20 @@ main {
     background-color: #a8a8a8;
     padding: 10px 50px;
     border-radius: 10px;
-    border: solid 2px;
-
+    border: solid 2px #a8a8a8;
+    animation: pulse 2s infinite alternate;
     transition: all 500ms;
+    filter: drop-shadow( 0 0 10px #FFFFFF30);
+
+}
+@keyframes pulse {
+    0% {
+        transform: scale(0.99);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
 
 }
 
@@ -174,13 +185,14 @@ main {
     padding: 10px 50px;
     border-radius: 10px;
 
+    animation: pulse 2s infinite alternate;
 }
 
 .section-about .about .btn-about .Contato:hover {
     background-color: #D0D0D020;
 
 }
-/* SECTION SOBRE MIM */
+/* SECTION PROJETOS */
 .section-Project {
     display: flex;
     align-items: center;
@@ -195,6 +207,7 @@ main {
     flex-direction: column;
     gap: 30px;
 }
+
 
 .section-Project .projetos i {
     font-size: 70px;
