@@ -137,7 +137,7 @@ main {
     align-items: center;
     gap: 20px;
     color: #D0D0D0;
-
+    
 
 }
 
@@ -151,20 +151,47 @@ main {
     padding: 10px 50px;
     border-radius: 10px;
     border: solid 2px #a8a8a8;
-    animation: pulse 2s infinite alternate;
+    animation: oscilar 2s ease-in-out infinite alternate, Pulse-Shadow 1s ease-in-out infinite alternate;
     transition: all 500ms;
     filter: drop-shadow( 0 0 10px #FFFFFF30);
 
 }
-@keyframes pulse {
+@keyframes entrada {
     0% {
-        transform: scale(0.99);
+        transform: scale(1.5);
+        opacity: 1;
+        filter: blur(5px);
     }
 
     100% {
-        transform: scale(1.1);
+        transform: scale(1.0);
+        opacity: 1;
+    }
+}
+
+@keyframes entrada2 {
+    0% {
+        transform: translateY(30%);
+        opacity: 1;
+        filter: blur(5px);
     }
 
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes oscilar {
+    0% {
+        transform: scale(0.95);
+        
+    }
+
+    100% {
+        transform: scale(1.05);
+        
+    }
 }
 
 .section-about .about .btn-about .Projetos:hover {
@@ -311,3 +338,4 @@ footer .footer-contato i:hover {
         padding: 100px 0px 100px ;
     }
 }
+
