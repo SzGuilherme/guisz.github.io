@@ -227,6 +227,8 @@ main {
     align-items: center;
     justify-content: center;
     height: 100vh;
+
+    animation: entrada2 2s ease-out;
 }
 
 .section-Project .projetos{
@@ -340,5 +342,6 @@ footer .footer-contato i:hover {
         padding: 100px 0px 100px ;
     }
 }
+
 
 
